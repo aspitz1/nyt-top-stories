@@ -2,7 +2,7 @@
 This application is built using the [New York Times API](https://developer.nytimes.com/docs/top-stories-product/1/overview). 
 
 ## Project Goals
-It is an application build to demonstrate Anna Spitz's understanding of several topics:
+This application is built for an evaluation in order to demonstrate foundational skills of:
 * React JS and Front-End best practices
 * Ability to prioritize MVP
 * Hierarchy of information
