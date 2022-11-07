@@ -13,4 +13,10 @@ This application is built for an evaluation in order to demonstrate foundational
 
 <img width="600" alt="Screenshot 2022-11-07 at 4 05 18 PM" src="https://user-images.githubusercontent.com/95593550/200425371-3d09b114-bcf4-44df-9e2f-f25afb934085.png">
 
+*Component tree*
+
+<img width="600" alt="Screenshot 2022-11-07 at 5 10 49 PM" src="https://user-images.githubusercontent.com/95593550/200434942-99b5453c-b7f2-487e-88dd-ce98f4a59769.png">
+
+
+
 
