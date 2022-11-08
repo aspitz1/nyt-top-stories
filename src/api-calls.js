@@ -16,8 +16,8 @@ const getArticlesBySection = async (section) => {
           byline: item.byline,
           publishedDate: dateFormatter(item.published_date),
           updatedDate: dateFormatter(item.updated_date),
-          largeImage: item.multimedia[1].url,
-          thumbnailImage: item.multimedia[2].url
+          largeImage: item.multimedia[1],
+          thumbnailImage: item.multimedia[2]
         };
       });
 
