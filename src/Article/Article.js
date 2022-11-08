@@ -1,25 +1,24 @@
-const Article = ({ article }) => {
+const Article = ({ article, setModalIsOpen, setSelectedArticle }) => {
   const {
     title,
-    abstract,
-    url,
     byline,
-    publishedDate,
     updatedDate,
-    largeImage,
     thumbnailImage,
   } = article;
 
-  console.log(thumbnailImage);
+  const clickHandler = () => {
+    setSelectedArticle(article);
+    setModalIsOpen(true);
+  };
 
   return (
-    <article>
+    <article onClick={clickHandler}>
       <img src={thumbnailImage.url} alt={thumbnailImage.caption} />
-      <p>{title}</p>
+      <h2>{title}</h2>
       <p>{byline}</p>
-      <p>Updated At: {updatedDate}</p>
+      <p>Updated: {updatedDate}</p>
     </article>
-  )
+  );
 };
 
 export default Article;
