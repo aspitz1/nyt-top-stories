@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Modal from "react-modal";
 import getArticlesBySection from "./api-calls";
+import NavBar from "./NavBar/NavBar";
 import ArticleList from "./ArticleList/ArticleList";
 import ArticleDetail from "./ArticleDetail/ArticleDetail";
 
@@ -23,15 +24,25 @@ function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   useEffect(() => {
-    getArticlesBySection("home")
+    setCurrentArticles(null);
+    getArticlesBySection(selectedSection)
       .then((articles) => setCurrentArticles(articles))
-      .catch((err) => setError(err));
+      .catch((err) => {
+        setError(err.message)});
   }, [selectedSection]);
 
-  return error ? (
-    <p>{error.error}</p>
-  ) : (
+  if (error) {
+    return <p>Something has gone wrong: {error}</p>;
+  }
+
+  return (
     <>
+      <NavBar setSelectedSection={setSelectedSection} />
+      <ArticleList
+        currentArticles={currentArticles}
+        setModalIsOpen={setModalIsOpen}
+        setSelectedArticle={setSelectedArticle}
+      />
       <Modal
         isOpen={modalIsOpen}
         style={customStyles}
@@ -39,15 +50,11 @@ function App() {
         onRequestClose={() => setModalIsOpen(false)}
       >
         <ArticleDetail
+          setSelectedArticle={setSelectedArticle}
           selectedArticle={selectedArticle}
           setModalIsOpen={setModalIsOpen}
         />
       </Modal>
-      <ArticleList
-        currentArticles={currentArticles}
-        setModalIsOpen={setModalIsOpen}
-        setSelectedArticle={setSelectedArticle}
-      />
     </>
   );
 }

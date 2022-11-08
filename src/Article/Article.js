@@ -9,7 +9,7 @@ const Article = ({ article, setModalIsOpen, setSelectedArticle }) => {
   return (
     <article>
       <button title="Article Details" onClick={clickHandler}>
-        <img src={thumbnailImage.url} alt={thumbnailImage.caption} />
+        <img src={thumbnailImage.url} alt={thumbnailImage.caption} style={{width: 150, height: 150}} />
       </button>
       <h2>{title}</h2>
       <p>{byline}</p>

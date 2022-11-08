@@ -5,7 +5,9 @@ const getArticlesBySection = async (section) => {
     const response = await fetch(
       `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=${process.env.REACT_APP_API_KEY}`
     );
-    if (response.ok) {
+    if (!response.ok) {
+      throw new Error(response.statusText);
+    } else {
       const data = await response.json();
       const articles = data.results.map((item) => {
         return {
@@ -16,14 +18,12 @@ const getArticlesBySection = async (section) => {
           byline: item.byline,
           publishedDate: dateFormatter(item.published_date),
           updatedDate: dateFormatter(item.updated_date),
-          largeImage: item.multimedia[1],
-          thumbnailImage: item.multimedia[2]
+          largeImage: item.multimedia ? item.multimedia[1] : "#",
+          thumbnailImage: item.multimedia ? item.multimedia[2] : "#",
         };
       });
 
       return articles;
-    } else {
-      throw new Error(response.statusText);
     }
   } catch (err) {
     throw err;
