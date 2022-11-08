@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Article from "../Article/Article";
 
 const ArticleList = ({
@@ -5,12 +6,13 @@ const ArticleList = ({
   setModalIsOpen,
   setSelectedArticle,
 }) => {
+
   const makeArticles = () => {
     if (currentArticles) {
-      return currentArticles.map((article) => {
+      return currentArticles.map((article, i) => {
         return (
           <Article
-            key={article.title}
+            key={i}
             article={article}
             setSelectedArticle={setSelectedArticle}
             setModalIsOpen={setModalIsOpen}

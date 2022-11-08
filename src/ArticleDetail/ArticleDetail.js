@@ -1,4 +1,8 @@
-const ArticleDetail = ({ setModalIsOpen, selectedArticle }) => {
+const ArticleDetail = ({
+  setModalIsOpen,
+  selectedArticle,
+  setSelectedArticle,
+}) => {
   const {
     title,
     abstract,
@@ -8,6 +12,11 @@ const ArticleDetail = ({ setModalIsOpen, selectedArticle }) => {
     updatedDate,
     largeImage,
   } = selectedArticle;
+
+  const closeHandler = () => {
+    setModalIsOpen(false);
+    setSelectedArticle(null);
+  };
 
   return (
     <section>
@@ -21,8 +30,10 @@ const ArticleDetail = ({ setModalIsOpen, selectedArticle }) => {
         <figcaption>{largeImage.caption}</figcaption>
       </figure>
       <p>{abstract}</p>
-      <p>Read more on <a href={url}>The New York Times</a></p>
-      <button onClick={() => setModalIsOpen(false)}>Close</button>
+      <p>
+        Read more on <a href={url}>The New York Times</a>
+      </p>
+      <button onClick={closeHandler}>Close</button>
     </section>
   );
 };
