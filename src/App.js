@@ -28,7 +28,9 @@ function App() {
       .catch((err) => setError(err));
   }, [selectedSection]);
 
-  return (
+  return error ? (
+    <p>{error.error}</p>
+  ) : (
     <>
       <Modal
         isOpen={modalIsOpen}

@@ -1,10 +1,5 @@
 const Article = ({ article, setModalIsOpen, setSelectedArticle }) => {
-  const {
-    title,
-    byline,
-    updatedDate,
-    thumbnailImage,
-  } = article;
+  const { title, byline, updatedDate, thumbnailImage } = article;
 
   const clickHandler = () => {
     setSelectedArticle(article);
@@ -12,8 +7,10 @@ const Article = ({ article, setModalIsOpen, setSelectedArticle }) => {
   };
 
   return (
-    <article onClick={clickHandler}>
-      <img src={thumbnailImage.url} alt={thumbnailImage.caption} />
+    <article>
+      <button title="Article Details" onClick={clickHandler}>
+        <img src={thumbnailImage.url} alt={thumbnailImage.caption} />
+      </button>
       <h2>{title}</h2>
       <p>{byline}</p>
       <p>Updated: {updatedDate}</p>
