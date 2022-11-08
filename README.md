@@ -26,6 +26,11 @@ This application is built for an evaluation in order to demonstrate foundational
 
 <img width="600" alt="Screenshot 2022-11-07 at 6 01 36 PM" src="https://user-images.githubusercontent.com/95593550/200441326-376a3124-5ef5-4302-bba5-9004bb08c909.png">
 
+*Wire-frame: Phone Layout*
+
+<img width="200" alt="Screenshot 2022-11-07 at 6 09 59 PM" src="https://user-images.githubusercontent.com/95593550/200442332-75a790e0-bb37-4508-9541-302227ba12ea.png">
+
+
 
 
 
