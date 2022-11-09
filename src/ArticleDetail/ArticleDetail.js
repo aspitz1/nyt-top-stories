@@ -1,3 +1,5 @@
+import "./ArticleDetail.css";
+
 const ArticleDetail = ({ setModalIsOpen, selectedArticle }) => {
   const {
     title,
@@ -14,7 +16,7 @@ const ArticleDetail = ({ setModalIsOpen, selectedArticle }) => {
   };
 
   return (
-    <section>
+    <section className="ArticleDetail-container">
       <h2>{title}</h2>
       <p>{byline}</p>
       <p>

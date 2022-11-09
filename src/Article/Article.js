@@ -1,3 +1,5 @@
+import "./Article.css";
+
 const Article = ({ article, setModalIsOpen, setSelectedArticle }) => {
   const { title, byline, updatedDate, thumbnailImage } = article;
 
@@ -7,7 +9,7 @@ const Article = ({ article, setModalIsOpen, setSelectedArticle }) => {
   };
 
   return (
-    <article>
+    <article className="Article-container">
       <button title="Article Details" onClick={clickHandler}>
         <img src={thumbnailImage.url} alt={thumbnailImage.caption} style={{width: 150, height: 150}} />
       </button>
