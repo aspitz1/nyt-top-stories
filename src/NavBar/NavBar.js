@@ -3,7 +3,7 @@ import "./NavBar.css";
 
 const NavBar = () => {
   const active = {
-    background: "#7b7b7b",
+    background: "#fff",
   };
 
   return (
