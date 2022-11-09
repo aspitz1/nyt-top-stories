@@ -1,0 +1,134 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2022 The New York Times Company. All Rights Reserved.",
+  "section": "home",
+  "last_updated": "2022-11-09T10:29:05-05:00",
+  "num_results": 31,
+  "results": [
+    {
+      "section": "us",
+      "subsection": "politics",
+      "title": "Five Takeaways From a Red Wave That Didn’t Reach the Shore",
+      "abstract": "Democrats showed up, Trump-backed candidates underperformed and inflation wasn’t the whole story: Here are last night’s lessons.",
+      "url": "https://www.nytimes.com/2022/11/09/us/politics/midterm-elections-takeaways.html",
+      "uri": "nyt://article/cc5ebad1-13b0-5caf-aade-c2a9771d0b4d",
+      "byline": "By Blake Hounshell",
+      "item_type": "Article",
+      "updated_date": "2022-11-09T07:06:43-05:00",
+      "created_date": "2022-11-09T05:00:36-05:00",
+      "published_date": "2022-11-09T05:00:36-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Midterm Elections (2022)",
+        "United States Politics and Government",
+        "Elections, Senate",
+        "Abortion",
+        "Polls and Public Opinion",
+        "United States Economy",
+        "Elections, Governors",
+        "Elections, House of Representatives"
+      ],
+      "org_facet": [
+        "Democratic Party",
+        "Republican Party"
+      ],
+      "per_facet": [
+        "Biden, Joseph R Jr",
+        "Trump, Donald J"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2022/11/08/us/politics/08pol-takeaways/merlin_216315723_a71a580c-104b-49d8-bd1a-e4a1b2db1b22-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Patrons watch election news at a Manhattan restaurant on Tuesday.",
+          "copyright": "Brittainy Newman for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2022/11/08/us/politics/08pol-takeaways/merlin_216315723_a71a580c-104b-49d8-bd1a-e4a1b2db1b22-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Patrons watch election news at a Manhattan restaurant on Tuesday.",
+          "copyright": "Brittainy Newman for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2022/11/08/us/politics/08pol-takeaways/08pol-takeaways-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Patrons watch election news at a Manhattan restaurant on Tuesday.",
+          "copyright": "Brittainy Newman for The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/3NPfd4o"
+    },
+    {
+      "section": "us",
+      "subsection": "politics",
+      "title": "How a G.O.P. Wave Became a Ripple",
+      "abstract": "The conditions seemed ripe for Republicans to make big midterm pickups. Voters had other ideas.",
+      "url": "https://www.nytimes.com/2022/11/09/us/politics/republican-election-results.html",
+      "uri": "nyt://article/3b68a86a-9325-5d6d-9e23-0ab65f9bd6f8",
+      "byline": "By Lisa Lerer",
+      "item_type": "Article",
+      "updated_date": "2022-11-09T08:53:46-05:00",
+      "created_date": "2022-11-09T05:01:08-05:00",
+      "published_date": "2022-11-09T05:01:08-05:00",
+      "material_type_facet": "",
+      "kicker": "news analysis",
+      "des_facet": [
+        "Midterm Elections (2022)",
+        "United States Politics and Government"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Biden, Joseph R Jr",
+        "Trump, Donald J"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2022/11/09/us/politics/09pol-assess-sub1/merlin_216288195_80468fc5-a2af-40a6-afbf-4030a7d9bd08-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1536,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A voting place at an elementary school in Norwalk, Calif. The United States left the midterm elections as a country still divided.",
+          "copyright": "Adam Perez for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2022/11/09/us/politics/09pol-assess-sub1/merlin_216288195_80468fc5-a2af-40a6-afbf-4030a7d9bd08-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A voting place at an elementary school in Norwalk, Calif. The United States left the midterm elections as a country still divided.",
+          "copyright": "Adam Perez for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2022/11/09/us/politics/09pol-assess-sub1/09pol-assess-sub1-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A voting place at an elementary school in Norwalk, Calif. The United States left the midterm elections as a country still divided.",
+          "copyright": "Adam Perez for The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/3fRdajW"
+    }
+  ]
+}
