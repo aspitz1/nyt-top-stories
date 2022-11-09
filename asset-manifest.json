@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nyt-top-stories/static/css/main.dfeaeb78.css",
+    "main.js": "/nyt-top-stories/static/js/main.8f853d07.js",
+    "index.html": "/nyt-top-stories/index.html",
+    "main.dfeaeb78.css.map": "/nyt-top-stories/static/css/main.dfeaeb78.css.map",
+    "main.8f853d07.js.map": "/nyt-top-stories/static/js/main.8f853d07.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dfeaeb78.css",
+    "static/js/main.8f853d07.js"
+  ]
+}
