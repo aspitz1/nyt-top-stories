@@ -15,6 +15,12 @@ This application is built for an evaluation in order to demonstrate foundational
 
 *Component tree*
 
+First iteration
+
+<img width="532" alt="Screenshot 2022-11-08 at 2 21 40 PM" src="https://user-images.githubusercontent.com/95593550/200930525-af0f1d12-e11f-4bbc-9a07-e11d859dd311.png">
+
+Second iteration
+
 <img width="554" alt="Screenshot 2022-11-08 at 3 26 11 PM" src="https://user-images.githubusercontent.com/95593550/200678885-50865fdd-5e6d-432a-b057-0ac26abb721b.png">
 
 *Wire-frame: Home Screen*
