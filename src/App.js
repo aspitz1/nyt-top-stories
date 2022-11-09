@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Modal from "react-modal";
 import getArticlesBySection from "./api-calls";
+import Header from "./Header/Header";
 import NavBar from "./NavBar/NavBar";
 import ArticleList from "./ArticleList/ArticleList";
 import ArticleDetail from "./ArticleDetail/ArticleDetail";
@@ -39,6 +40,7 @@ function App() {
 
   return (
     <>
+      <Header />
       <NavBar setSelectedSection={setSelectedSection} />
       <SortByDateToggle
         currentArticles={currentArticles}
