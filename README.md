@@ -77,7 +77,7 @@ This application is built for an evaluation in order to demonstrate foundational
 * Add testing for modal
 * Further style modal
 * Have tab cursor move back up to first element when section is changed
-
+* Add lazy loading of articles for better performance 
 
 
 
