@@ -1,4 +1,4 @@
-import { dateFormatter } from "./utility";
+import { dateFormatter, sortDatesDescending } from "./utility";
 
 const getArticlesBySection = async (section) => {
   try {
@@ -23,7 +23,7 @@ const getArticlesBySection = async (section) => {
         };
       });
 
-      return articles;
+      return sortDatesDescending(articles);
     }
   } catch (err) {
     throw err;

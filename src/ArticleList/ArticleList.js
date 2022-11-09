@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Article from "../Article/Article";
 
 const ArticleList = ({
@@ -6,7 +5,6 @@ const ArticleList = ({
   setModalIsOpen,
   setSelectedArticle,
 }) => {
-
   const makeArticles = () => {
     if (currentArticles) {
       return currentArticles.map((article, i) => {
@@ -22,7 +20,10 @@ const ArticleList = ({
     }
   };
 
-  return <>{currentArticles ? makeArticles() : <p>Loading...</p>}</>;
+  if (!currentArticles) {
+    return <p>Loading...</p>;
+  }
+  return <main>{makeArticles()}</main>;
 };
 
 export default ArticleList;
