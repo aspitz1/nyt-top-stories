@@ -5,6 +5,7 @@ const getArticlesBySection = async (section) => {
     const response = await fetch(
       `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=${"DuZumcVZhDy8NiAs8sFnAVqj1PpORVJW"}`
     );
+    console.log(response);
     if (!response.ok) {
       throw new Error(response.statusText);
     } else {
