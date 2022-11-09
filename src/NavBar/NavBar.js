@@ -1,30 +1,16 @@
-const NavBar = ({ setSelectedSection }) => {
+import { NavLink } from "react-router-dom";
+
+const NavBar = () => {
   return (
     <nav>
-      <button title="Home" onClick={() => setSelectedSection("home")}>
-        Home
-      </button>
-      <button title="US" onClick={() => setSelectedSection("us")}>
-        US
-      </button>
-      <button title="World" onClick={() => setSelectedSection("world")}>
-        World
-      </button>
-      <button title="Technology" onClick={() => setSelectedSection("technology")}>
-        Technology
-      </button>
-      <button title="Arts" onClick={() => setSelectedSection("arts")}>
-        Arts
-      </button>
-      <button title="Books" onClick={() => setSelectedSection("books")}>
-        Books
-      </button>
-      <button title="Food" onClick={() => setSelectedSection("food")}>
-        Food
-      </button>
-      <button title="Health" onClick={() => setSelectedSection("health")}>
-        Health
-      </button>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/us">US</NavLink>
+      <NavLink to="/world">World</NavLink>
+      <NavLink to="/technology">Technology</NavLink>
+      <NavLink to="/arts">Arts</NavLink>
+      <NavLink to="/books">Books</NavLink>
+      <NavLink to="/food">Food</NavLink>
+      <NavLink to="/health">Health</NavLink>
     </nav>
   );
 };
