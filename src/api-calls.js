@@ -3,7 +3,7 @@ import { dateFormatter, sortDatesDescending } from "./utility";
 const getArticlesBySection = async (section) => {
   try {
     const response = await fetch(
-      `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=${process.env.REACT_APP_API_KEY}`
+      `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=${"DuZumcVZhDy8NiAs8sFnAVqj1PpORVJW"}`
     );
     if (!response.ok) {
       throw new Error(response.statusText);
