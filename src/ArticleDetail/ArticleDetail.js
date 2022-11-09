@@ -1,8 +1,4 @@
-const ArticleDetail = ({
-  setModalIsOpen,
-  selectedArticle,
-  setSelectedArticle,
-}) => {
+const ArticleDetail = ({ setModalIsOpen, selectedArticle }) => {
   const {
     title,
     abstract,
@@ -15,7 +11,6 @@ const ArticleDetail = ({
 
   const closeHandler = () => {
     setModalIsOpen(false);
-    setSelectedArticle(null);
   };
 
   return (

@@ -4,6 +4,7 @@ import getArticlesBySection from "./api-calls";
 import NavBar from "./NavBar/NavBar";
 import ArticleList from "./ArticleList/ArticleList";
 import ArticleDetail from "./ArticleDetail/ArticleDetail";
+import SortByDateToggle from "./SortByDateToggle/SortByDateToggle";
 
 const customStyles = {
   content: {
@@ -19,7 +20,7 @@ const customStyles = {
 function App() {
   const [selectedSection, setSelectedSection] = useState("home");
   const [currentArticles, setCurrentArticles] = useState(null);
-  const [selectedArticle, setSelectedArticle] = useState(null);
+  const [selectedArticle, setSelectedArticle] = useState({});
   const [error, setError] = useState(null);
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -28,7 +29,8 @@ function App() {
     getArticlesBySection(selectedSection)
       .then((articles) => setCurrentArticles(articles))
       .catch((err) => {
-        setError(err.message)});
+        setError(err.message);
+      });
   }, [selectedSection]);
 
   if (error) {
@@ -38,6 +40,10 @@ function App() {
   return (
     <>
       <NavBar setSelectedSection={setSelectedSection} />
+      <SortByDateToggle
+        currentArticles={currentArticles}
+        setCurrentArticles={setCurrentArticles}
+      />
       <ArticleList
         currentArticles={currentArticles}
         setModalIsOpen={setModalIsOpen}
@@ -50,7 +56,6 @@ function App() {
         onRequestClose={() => setModalIsOpen(false)}
       >
         <ArticleDetail
-          setSelectedArticle={setSelectedArticle}
           selectedArticle={selectedArticle}
           setModalIsOpen={setModalIsOpen}
         />
