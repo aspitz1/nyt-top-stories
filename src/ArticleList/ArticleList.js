@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useParams } from "react-router";
 import Article from "../Article/Article";
 import getArticlesBySection from "../api-calls";
+import "./ArticleList.css";
 
 const ArticleList = ({
   currentArticles,
@@ -41,9 +42,9 @@ const ArticleList = ({
   };
 
   if (!currentArticles) {
-    return <p>Loading...</p>;
+    return <p className="loading">Loading...</p>;
   }
-  return <main>{makeArticles()}</main>;
+  return <main className="ArticleList-container">{makeArticles()}</main>;
 };
 
 export default ArticleList;

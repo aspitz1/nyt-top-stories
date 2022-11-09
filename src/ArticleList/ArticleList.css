@@ -1,0 +1,14 @@
+.ArticleList-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-gap: 30px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.loading {
+  font-size: larger;
+  text-align: center;
+}

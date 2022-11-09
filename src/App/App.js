@@ -1,20 +1,20 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Routes, Route } from "react-router";
 import Modal from "react-modal";
-import getArticlesBySection from "./api-calls";
-import Header from "./Header/Header";
-import NavBar from "./NavBar/NavBar";
-import ArticleList from "./ArticleList/ArticleList";
-import ArticleDetail from "./ArticleDetail/ArticleDetail";
-import SortByDateToggle from "./SortByDateToggle/SortByDateToggle";
+import Header from "../Header/Header";
+import NavBar from "../NavBar/NavBar";
+import ArticleList from "../ArticleList/ArticleList";
+import ArticleDetail from "../ArticleDetail/ArticleDetail";
+import SortByDateToggle from "../SortByDateToggle/SortByDateToggle";
+import "./App.css";
 
 const customStyles = {
   content: {
-    top: "10%",
-    left: "10%",
+    top: "50%",
+    left: "50%",
     right: "auto",
     bottom: "auto",
-    transform: "translate(-10%, -10%)",
+    transform: "translate(-50%, -50%)",
   },
 };
 
@@ -29,7 +29,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className="App-container">
       <Header />
       <NavBar />
       <SortByDateToggle
@@ -73,7 +73,7 @@ function App() {
           setModalIsOpen={setModalIsOpen}
         />
       </Modal>
-    </>
+    </div>
   );
 }
 
