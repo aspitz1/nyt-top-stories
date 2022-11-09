@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { sortDatesAscending, sortDatesDescending } from "../utility";
+import "./SortByDateToggle.css";
 
 const SortByDateToggle = ({ currentArticles, setCurrentArticles }) => {
   const [isCurrentlyDescending, setIsCurrentlyDescending] = useState(true);
@@ -19,17 +20,31 @@ const SortByDateToggle = ({ currentArticles, setCurrentArticles }) => {
   };
 
   return (
-    <label>
+    <label className="SortByDateToggle-container">
       Updated:
       <button
-        title="Sort by Most Recent"
+        className={
+          isCurrentlyDescending
+            ? "SortByDateToggle-active"
+            : "SortByDateToggle-inactive"
+        }
+        title={
+          isCurrentlyDescending
+            ? "Sorted by Most Recent"
+            : "Sort by Most Recent"
+        }
         disabled={isCurrentlyDescending}
         onClick={sortDateByDescendingHandler}
       >
         Most Recent
       </button>
       <button
-        title="Sort by Oldest First"
+        className={
+          !isCurrentlyDescending
+            ? "SortByDateToggle-active"
+            : "SortByDateToggle-inactive"
+        }
+        title={!isCurrentlyDescending ? "Sorted by Oldest First" : "Sort by Oldest First"}
         disabled={!isCurrentlyDescending}
         onClick={sortDateByAscendingHandler}
       >

@@ -17,20 +17,20 @@ const ArticleDetail = ({ setModalIsOpen, selectedArticle }) => {
 
   return (
     <section className="ArticleDetail-container">
+      <figure>
+        <img className="modal-img" src={largeImage.url} alt={largeImage.copyright}/>
+        <figcaption>{largeImage.caption}</figcaption>
+      </figure>
       <h2>{title}</h2>
       <p>{byline}</p>
       <p>
         Published: {publishedDate}, Updated: {updatedDate}
       </p>
-      <figure>
-        <img src={largeImage.url} />
-        <figcaption>{largeImage.caption}</figcaption>
-      </figure>
       <p>{abstract}</p>
       <p>
         Read more on <a href={url}>The New York Times</a>
       </p>
-      <button onClick={closeHandler}>Close</button>
+      <button className="ArticleDetail-btn" onClick={closeHandler}>Close</button>
     </section>
   );
 };

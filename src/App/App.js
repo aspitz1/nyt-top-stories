@@ -10,11 +10,11 @@ import "./App.css";
 
 const customStyles = {
   content: {
-    top: "20%",
-    left: "20%",
+    top: "50%",
+    left: "50%",
     right: "auto",
     bottom: "auto",
-    transform: "translate(-20%, -20%)",
+    transform: "translate(-50%, -50%)",
   },
 };
 

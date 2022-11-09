@@ -1,0 +1,20 @@
+.SortByDateToggle-container {
+  margin-bottom: 20px;
+}
+
+.SortByDateToggle-active,
+.SortByDateToggle-inactive {
+  background: none;
+  border: none;
+  padding: 3px 5px;
+}
+
+.SortByDateToggle-active,
+.SortByDateToggle-active:disabled {
+  background: rgb(150, 150, 150);
+  color: #000;
+}
+
+.SortByDateToggle-inactive {
+  cursor: pointer;
+}
