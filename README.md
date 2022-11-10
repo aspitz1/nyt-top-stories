@@ -63,7 +63,7 @@ Second iteration
 * Considered use on Computers and Phones
 
 ### Features
-* Used modal for Article Details for quick user interactions
+* Modal displaying Article Details for quick user interactions
 * Chronological feed can be sorted by user in both descending and ascending order
 * User can visit newsfeed sections, sections use routing so user has access to back button
 
@@ -78,6 +78,12 @@ Second iteration
 * Shows examples of happy and sad path testing
 * Stubs data from API
 <img width="400" alt="Screenshot 2022-11-09 at 10 58 27 AM" src="https://user-images.githubusercontent.com/95593550/200900164-5651e0e9-bdca-46d0-b61b-98ddba4640e4.png">
+
+## Reflection on Presentation Feedback 
+* Introduced npm package to format dates: [date-fns](https://date-fns.org/)
+  * Really cool package, will use again
+  * Offers a bunch of tools for organizing and formatting dates
+  * Took the guess work out of sorting dates
 
 ## Roadmap
 * Add testing for modal
