@@ -1,8 +1,7 @@
+import { format } from "date-fns";
+
 const dateFormatter = (dateString) => {
-  return new Intl.DateTimeFormat("en-US", {
-    dateStyle: "short",
-    timeStyle: "short",
-  }).format(new Date(dateString));
+  return format(new Date(dateString), "Pp");
 };
 
 const sortDatesAscending = (articles) => {
