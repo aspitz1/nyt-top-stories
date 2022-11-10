@@ -84,6 +84,15 @@ Second iteration
   * Really cool package, will use again
   * Offers a bunch of tools for organizing and formatting dates
   * Took the guess work out of sorting dates
+  
+* Since React props are objects, they are passed by reference
+* Any state that is an Object or a Array is also passed by reference
+  * [Link to more info about passed by value vs reference](https://medium.com/nodesimplified/javascript-pass-by-value-and-pass-by-reference-in-javascript-fcf10305aa9c)  
+* When something is passed by reference the "address" of the object / array is passed
+* The "address" means that the location of where the object / array lives in memory is passed vs the value
+* If a value in an object or array is mutated, React doesn't know about it because it still sees the object / array as the same "address"
+* In order for React to know a value in an array or object has been changes, you need to be sure to make a new copy of the value then mutate the new copy
+* This will give you an object / array with a new "address" or place in memory
 
 ## Roadmap
 * Add testing for modal
