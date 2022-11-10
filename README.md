@@ -80,11 +80,13 @@ Second iteration
 <img width="400" alt="Screenshot 2022-11-09 at 10 58 27 AM" src="https://user-images.githubusercontent.com/95593550/200900164-5651e0e9-bdca-46d0-b61b-98ddba4640e4.png">
 
 ## Reflection on Presentation Feedback 
+### Refactoring Dates
 * Introduced npm package to format dates: [date-fns](https://date-fns.org/)
   * Really cool package, will use again
   * Offers a bunch of tools for organizing and formatting dates
   * Took the guess work out of sorting dates
-  
+
+### Passed in Reference
 * Since React props are objects, they are passed by reference
 * Any state that is an Object or a Array is also passed by reference
   * [Link to more info about passed by value vs reference](https://medium.com/nodesimplified/javascript-pass-by-value-and-pass-by-reference-in-javascript-fcf10305aa9c)  
