@@ -60,7 +60,7 @@ Second iteration
 
 ### UI
 * Kept UI simple to in order to meet MVP in under 8hr time limit
-* Considered use on Computers and Phones
+* Responsive on computer, tablet and phone screens
 
 ### Features
 * Modal displaying Article Details for quick user interactions
